@@ -41,7 +41,7 @@ goog.require('Blockly');
  * Should be the same as Blockly.Msg.LOGIC_HUE.
  * @readonly
  */
-Blockly.Constants.Logic.HUE = "#2F1847";
+Blockly.Constants.Logic.HUE = "#065281";
 /** @deprecated Use Blockly.Constants.Logic.HUE */
 Blockly.Blocks.logic.HUE = Blockly.Constants.Logic.HUE;
 
@@ -61,7 +61,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": "Boolean",
-    "colour": "#2F1847",
+    "colour": "#065281",
     "tooltip": "%{BKY_LOGIC_BOOLEAN_TOOLTIP}",
     "helpUrl": "%{BKY_LOGIC_BOOLEAN_HELPURL}"
   },
@@ -86,7 +86,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     "output": null,
     // "previousStatement": null,
     // "nextStatement": null,
-    "colour": "#2F1847",
+    "colour": "#065281",
     "helpUrl": "%{BKY_CONTROLS_IF_HELPURL}",
     // "mutator": "controls_if_mutator",
     "extensions": ["controls_if_tooltip"]
@@ -117,7 +117,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": null,
-    "colour": "#2F1847",
+    "colour": "#065281",
     "tooltip": "%{BKYCONTROLS_IF_TOOLTIP_2}",
     "helpUrl": "%{BKY_CONTROLS_IF_HELPURL}",
     "extensions": ["controls_if_tooltip"]
@@ -150,7 +150,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     ],
     "inputsInline": true,
     "output": "Boolean",
-    "colour": "#2F1847",
+    "colour": "#065281",
     "helpUrl": "%{BKY_LOGIC_COMPARE_HELPURL}",
     "extensions": ["logic_compare", "logic_op_tooltip"]
   },
@@ -180,7 +180,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     ],
     "inputsInline": true,
     "output": "Boolean",
-    "colour": "#2F1847",
+    "colour": "#065281",
     "helpUrl": "%{BKY_LOGIC_OPERATION_HELPURL}",
     "extensions": ["logic_op_tooltip"]
   },
@@ -196,7 +196,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": "Boolean",
-    "colour": "#2F1847",
+    "colour": "#065281",
     "tooltip": "%{BKY_LOGIC_NEGATE_TOOLTIP}",
     "helpUrl": "%{BKY_LOGIC_NEGATE_HELPURL}"
   },
