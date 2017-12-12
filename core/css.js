@@ -411,8 +411,10 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyFlyoutBackground {',
-    'fill: #ddd;',
+    'fill: white;',
     'fill-opacity: .8;',
+    'stroke-width: 2px;',
+    'stroke: #D0D0D0;',
   '}',
 
   '.blocklyTransparentBackground {',
@@ -534,7 +536,7 @@ Blockly.Css.CONTENT = [
     'line-height: 22px;',
     'margin-bottom: 3px;',
     'white-space: nowrap;',
-    'padding-right: 5px;',
+    'padding-right: 10px;',
   '}',
 
   '.blocklyTreeRow:hover {',
