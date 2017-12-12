@@ -112,11 +112,6 @@ Blockly.Css.setCursor = function(cursor) {
  * Array making up the CSS content for Blockly.
  */
 Blockly.Css.CONTENT = [
-  '@font-face {',
-    "font-family: 'proxima-nova';",
-    "src: url('../../media/ProximaNova-Regular.otf') format('opentype');",
-    "font-style: normal;",
-  '}',
 
   '.blocklySvg {',
     'background-color: #fff;',

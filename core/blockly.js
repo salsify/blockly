@@ -30,6 +30,9 @@
  **/
 goog.provide('Blockly');
 
+goog.require('Blockly.MutatorMinus');
+goog.require('Blockly.MutatorPlus');
+
 goog.require('Blockly.BlockSvg.render');
 goog.require('Blockly.Events');
 goog.require('Blockly.FieldAngle');

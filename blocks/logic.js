@@ -61,7 +61,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": "Boolean",
-    "colour": "%{BKY_LOGIC_HUE}",
+    "colour": "#2F1847",
     "tooltip": "%{BKY_LOGIC_BOOLEAN_TOOLTIP}",
     "helpUrl": "%{BKY_LOGIC_BOOLEAN_HELPURL}"
   },
