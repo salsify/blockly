@@ -512,7 +512,8 @@ Blockly.Css.CONTENT = [
 
   /* Category tree in Toolbox. */
   '.blocklyToolboxDiv {',
-    'background-color: #ddd;',
+    'background-color: #F1F1F5;',
+    'border: 1px solid #D0D0D0;',
     'overflow-x: visible;',
     'overflow-y: auto;',
     'position: absolute;',
@@ -529,11 +530,21 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeRow {',
-    'height: 22px;',
+    'height: 60px;',
     'line-height: 22px;',
     'margin-bottom: 3px;',
-    'padding-right: 8px;',
     'white-space: nowrap;',
+    'padding-right: 5px;',
+  '}',
+
+  '.blocklyTreeRow:hover {',
+    'cursor: pointer;',
+  '}',
+
+  '.blocklyTreeSideIcon {',
+    'margin-top: 16px;',
+    'vertical-align: middle;',
+    'margin-left: 10px;',
   '}',
 
   '.blocklyHorizontalTree {',
@@ -555,7 +566,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeSeparator {',
-    'border-bottom: solid #e5e5e5 1px;',
+    'border-bottom: 1px solid #D0D0D0;',
     'height: 0;',
     'margin: 5px 0;',
   '}',
@@ -572,7 +583,7 @@ Blockly.Css.CONTENT = [
     'background-image: url(<<<PATH>>>/sprites.png);',
     'height: 16px;',
     'vertical-align: middle;',
-    'width: 16px;',
+    'width: 9px;',
   '}',
 
   '.blocklyTreeIconClosedLtr {',
@@ -605,11 +616,17 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeLabel {',
+    'display: inline-block;',
     'cursor: default;',
-    'font-family: sans-serif;',
+    'font-family: proxima-nova;',
     'font-size: 16px;',
     'padding: 0 3px;',
     'vertical-align: middle;',
+    'margin-top: 18px;',
+  '}',
+
+  '.blocklyTreeLabel:hover {',
+    'cursor: pointer;',
   '}',
 
   '.blocklyToolboxDelete .blocklyTreeLabel {',

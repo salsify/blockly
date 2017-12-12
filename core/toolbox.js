@@ -208,6 +208,7 @@ Blockly.Toolbox.prototype.init = function() {
     tree.setSelectedItem(openNode);
   }
   this.addColour_();
+  this.addSideIcons();
   this.position();
 };
 
@@ -411,6 +412,27 @@ Blockly.Toolbox.prototype.addColour_ = function(opt_tree) {
       }
     }
     this.addColour_(child);
+  }
+};
+
+Blockly.Toolbox.prototype.addSideIcons = function(opt_tree) {
+  var tree = opt_tree || this.tree_;
+  var children = tree.getChildren();
+  for (var i = 0, child; child = children[i]; i++) {
+    var element = child.getRowElement();
+    if (element) {
+      var category = element.textContent && element.textContent.toLowerCase();
+      if (category) {
+        var node = document.createElement("img");
+        element.appendChild(node);
+        element.insertBefore(node, element.firstChild)
+        node.setAttribute('width', '30px');
+        node.setAttribute('height', '30px');
+        node.setAttribute('src', '/assets/' + category + '.png');
+        node.classList.add("blocklyTreeSideIcon");
+      }
+    }
+    this.addSideIcons(child);
   }
 };
 
