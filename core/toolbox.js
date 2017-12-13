@@ -418,6 +418,8 @@ Blockly.Toolbox.prototype.addColour_ = function(opt_tree) {
 Blockly.Toolbox.prototype.addSideIcons = function(opt_tree) {
   var tree = opt_tree || this.tree_;
   var children = tree.getChildren();
+  const inSalsify = typeof Salsify !== 'undefined';
+  const assetRoot = inSalsify ? '/app/visual-formula-editor/' : '/visual-formula-editor/';
   for (var i = 0, child; child = children[i]; i++) {
     var element = child.getRowElement();
     if (element) {
@@ -428,7 +430,7 @@ Blockly.Toolbox.prototype.addSideIcons = function(opt_tree) {
         element.insertBefore(node, element.firstChild)
         node.setAttribute('width', '30px');
         node.setAttribute('height', '30px');
-        node.setAttribute('src', '/assets/' + category + '.png');
+        node.setAttribute('src', assetRoot + category + '.png');
         node.classList.add("blocklyTreeSideIcon");
       }
     }
