@@ -242,7 +242,8 @@ Blockly.WidgetDiv.calculateY_ = function(viewportBBox, anchorBBox, widgetSize) {
   if (anchorBBox.bottom + widgetSize.height >=
       viewportBBox.bottom) {
     // The bottom of the widget is at the top of the field.
-    return anchorBBox.top - widgetSize.height;
+    return anchorBBox.top;
+    // return anchorBBox.top - widgetSize.height;
     // The widget could go off the top of the window, but it would also go off
     // the bottom.  The window is just too small.
   } else {
